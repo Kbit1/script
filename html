@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>로그인 창</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <title>자바스크립트 & 제이쿼리 조작명령어</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+        <script src="js/motion.js"></script>
 
-    <div class="main-background">
-        <h4 class="main-title">Buy our Shoes!</h4>
-        <p>한국에서 가장 합리적인 가격에 B신발을 구매할 수 있습니다<br>
-            한국에서 가장 합리적인 가격에 B신발을 구매할 수 있습니다<br>
-        </p>
-        <button class="main-button">구매하기</button>
-    </div>
+    </head>
 
-    <div class="sub-background">
-        <h5>안녕하세요</h5>
-        <p>신발 파는 로그인 신발 파는 로그인 비딜번호 입력하세요</p>
-    </div>
+    <body>
 
-    <br>
+        <h1>제이쿼리 동작 명령어</h1>
+        <!--Show() hide() toggle()-->
 
-    <div class="sub-background">
-        <h5>안녕하세요</h5>
-        <p>신발 파는 로그인 신발 파는 로그인 비딜번호 입력하세요</p>
-    </div>
+        <div class="s1">
+            <button>클릭</button>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<script src="index.js">
-</script>
-</body>
+        <!--SlideUp() SlideDown() slideToggle()-->
+        <div class="s2">
+            <dl>
+                <dt><button>문제1 마라탕은 왜 마라탕이죠?</button></dt>
+                <dd>마라는 한자로써 맵다는 뜻을 가지고 있으니까요</dd>
+
+                <dt><button>문제2 마카롱은 왜 마카롱이죠?</button></dt>
+                <dd>저도 잘 모르겠어요</dd>
+
+                <dt><button>문제3 진상은 왜 진상이죠?</button></dt>
+                <dd>임금님께 백성들이 주기적으로 바치는 물품을 진상이라고 합니다
+                    현대 먹고 살기 어려운 백성들이 진상 품목을 바치기 어려워서
+                    나쁜 사람들을 빗대어 진상을 피운다고 합니다
+                </dd> 
+            </dl>
+        </div>
+
+        <!--fadeIn() fadeOut() fadeTo()-->
+        <div class="s3">
+            <button>fadeIn</button>
+            <button>fadeOut</button>
+            <button>fadeTo 0.3</button>
+            <button>fadeTo 0.7</button>
+            <button>fadeTo 1</button>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+
+        <!--animate()-->
+        <div class="s4">샘플 4구역 입니다</div>
+    </body>
 </html>

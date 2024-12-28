@@ -252,3 +252,23 @@ $(function(){ //ready
 
 
 });
+
+
+$(function(){
+
+    $(".vision img").css({marginLeft:"300px" , opacity:0});
+    $(".vision div p:eq(0)").css({marginTop:"130px" ,opacity:0});
+    $(".vision div p:eq(1)").css({marginTop:"50px" ,opacity:0});
+
+    $(".vision img").animate({marginLeft:"0" , opacity:1},"normal",function(){
+        $(".vision div p:eq(0)").animate({marginTop:"0px" ,opacity:1},"normal",function(){
+            $(".vision div p:eq(1)").animate({marginTop:"0px" ,opacity:1},"normal");
+        });
+    });
+
+
+    
+});
+
+
+

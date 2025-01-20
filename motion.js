@@ -22,3 +22,4 @@ let 오브젝트 = {
 오브젝트.함수();
 
 });
+this 키워드를 알아보자 2. event listener와 constructor

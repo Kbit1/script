@@ -23,3 +23,4 @@ let object = {
 object.math()
 
 })
+//Arrow function은 function을 대체하는 신문법이 아님

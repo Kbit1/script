@@ -1,26 +1,35 @@
 $(function(){
 
+    // setTimeout(function(){
+    //     $(".alert-danger span").text(4)
+    // },1000)
 
-$("#btn").on("click",function(e){
-    let array = [1,2,3];
-    array.forEach(function(a){
-        console.log(this)
-    });
+    // setTimeout(function(){
+    //     $(".alert-danger span").text(3)
+    // },2000)
+
+    // setTimeout(function(){
+    //     $(".alert-danger span").text(2)
+    // },3000)
+
+    // setTimeout(function(){
+    //     $(".alert-danger span").text(1)
+    // },4000)
+
+
+    let count = 5 ;
+
+    setInterval(function(){
+        count -=1
+        if(count>=0){
+            $(".alert-danger span").text(count)
+        } else {
+            $(".alert-danger").hide()
+        }
+    },1000)
+
 
 })
 
-
-let object = {
-    name : ["Lee","Kim","Park"] , 
-    math : function(){
-        // console.log(this);
-        object.name.forEach(()=>{
-            console.log(this);
-        })
-    }
-}
-
-object.math()
-
-})
-//Arrow function은 function을 대체하는 신문법이 아님
+//자바스크립트 기초
+setTimeout 타이머주는 법 까지 완료 2단계임

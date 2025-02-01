@@ -1,35 +1,38 @@
 $(function(){
 
-    // setTimeout(function(){
-    //     $(".alert-danger span").text(4)
-    // },1000)
+    let count = 0;
+    let totalcount = 3;
 
-    // setTimeout(function(){
-    //     $(".alert-danger span").text(3)
-    // },2000)
+    function slide(index){
+        $(".imgwrap").stop().animate({marginLeft:`-${count*100}%`},1000)
+    }
+    
+$(".slide-1").on("click",()=>{
+    count=0
+    slide()
+})
 
-    // setTimeout(function(){
-    //     $(".alert-danger span").text(2)
-    // },3000)
+$(".slide-2").on("click",()=>{
+    count=1
+    slide()
+})
 
-    // setTimeout(function(){
-    //     $(".alert-danger span").text(1)
-    // },4000)
+$(".slide-3").on("click",()=>{
+    count=2
+    slide()
+})
 
-
-    let count = 5 ;
-
-    setInterval(function(){
-        count -=1
-        if(count>=0){
-            $(".alert-danger span").text(count)
-        } else {
-            $(".alert-danger").hide()
+    $(".next").on("click",()=>{
+        count++
+        if(count>=totalcount){
+            count=0
         }
-    },1000)
+        slide()
+    })
+
+
 
 
 })
 
-//자바스크립트 기초
-setTimeout 타이머주는 법 까지 완료 2단계임
+//코드를 잘 정리해보고 이해 다시해보기 그리고 이전으로 가기 만들어보기 //코드 3줄로 캐러셀 (이미지 슬라이드) 만들기 2

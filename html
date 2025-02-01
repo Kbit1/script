@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>페이지 제목</title>
+    <title>제목</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <script src="motion.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
+  <div style="overflow: hidden;">
+    <div class="imgwrap">
+      <div class="warp">
+        <img src="./IMG/car1.png">
+      </div>
 
-    <button id="btn">버튼</button>
+      <div class="warp">
+        <img src="./IMG/car2.png">
+      </div>
 
+      <div class="warp">
+        <img src="./IMG/car3.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="btnwarp">
+    <button class="slide-1">1</button>
+    <button class="slide-2">2</button>
+    <button class="slide-3">3</button>
+    <button class="next">다음</button>
+    <button class="before">이전</button>
+  </div>
 </body>
 </html>

@@ -1,0 +1,31 @@
+1번 문제
+< 369게임 >
+
+function game369(){
+  if( num%3==0 ){
+  console.log("박수")
+}
+}
+
+2번 문제
+< 9에서는 박수X2 가 나오게 하기>
+function game369(num){
+        if( num%9==0 ){
+            console.log("박수x2")
+        } else if (num%3==0){
+            console.log("박수")
+        } else {
+            console.log("통과")
+        }
+}
+
+3번 문제
+< 시험을 보고있다 2과목 합이 120점 이상이여야 합격이며 한과목이 40점 미만이면 불합격 >
+function success(a,b){
+    if( a+b > 120 && a > 40 && b > 40 ){
+        console.log("합격")
+    } else {
+        console.log("불합격")
+    }
+}
+

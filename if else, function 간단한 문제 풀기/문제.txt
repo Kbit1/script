@@ -29,3 +29,36 @@ function success(a,b){
     }
 }
 
+4번 문제 setInterval
+5초 짜리span 을 1초마다 감소시키며 0이되면 안보이게
+let countdown=5;
+setInterval(function(){
+let alertspan = $(".alert-danger span").text(countdown)
+countdown-=1
+
+    if(countdown>0){
+        $(".alert-danger span").text(countdown)
+    } else if(countdown==0){
+        $(".alert-danger").hide()
+    }
+
+},1000)
+
+ /* 
+    if(coutndown==4){
+        alertspan
+        coutndown--
+    } else if(coutndown==3){
+        alertspan
+        coutndown--
+    } else if(coutndown==2){
+        alertspan
+        coutndown--
+    } else if(coutndown==1){
+        alertspan
+        coutndown--
+        $(".alert-danger").hide()
+    }
+    */
+
+인데 첫번째가 더 효율적이다 같은 코드이지만 
